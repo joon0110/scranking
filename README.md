@@ -1,5 +1,9 @@
 # scranking
 
+scranking is a python library that display ranking of the college swimmer
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 ## Overview
 
 ranking.py is a pyhton library that calculates and illustrate the ranks of college swimmer.
