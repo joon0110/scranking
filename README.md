@@ -12,3 +12,6 @@ Only highschool swimmers have the rank illustrated on their profile. Unlike the 
 
 - [highschool swimmer](https://www.swimcloud.com/swimmer/1156452/)
 - [college swimmer](https://www.swimcloud.com/swimmer/549377/)
+
+
+Maybe I am changing to Columbia Graduate Calculator where it is a python library helps the student to be on track to graudate
