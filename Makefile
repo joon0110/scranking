@@ -1,6 +1,6 @@
 SRC = scranking
 SETUP = setup.py
-TESTS = scranking/tests/*
+TESTS = scranking/test/*
 
 #########
 # BUILD #
