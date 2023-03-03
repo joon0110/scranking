@@ -33,15 +33,17 @@ class TestSwimmer(unittest.TestCase):
         
         self.assertIsInstance(soup, BeautifulSoup)
 
-    def test_get_name_with_valid_input(self, mock_get):
+    def test_get_name_with_valid_input(self):
         html_doc = '<html><head><title>Sample Title | Swimcloud</title></head></html>'
         soup = BeautifulSoup(html_doc, 'html.parser')
         
         # Call the function and check the output
         self.assertEqual(swimmer.get_name(soup), "Sample Title")
 
-    def test_get_info(self):
+    @patch('requests.get')
+    def test_get_info(self, mock_get):
         swimmer = Swimmer("http://www.example.com")
+        mock_response = MagicMock()
         html = "<html><body><ul><li>Hometown</li><li>University: <a>University</a></li></ul>" \
                "<div class='btn-icon-plain'><a href='http://twitter.com'>Twitter</a></div>" \
                "<div class='btn-icon-plain'><a href='http://instagram.com'>Instagram</a></div>" \
