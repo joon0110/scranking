@@ -2879,7 +2879,7 @@
           });
       </script>
 <script type="text/javascript">
-  var csrf_token = "o1XM6ZFTnHwBWx8pk3SN5Sn5FiiI3F1GPT5CcylepRqxZJUwPi0KiK9GZbE0XEZL";
+  var csrf_token = "yAvUVAehiLQlYnumuwlSP1Y9koYNU1vgAJNca0wYRHDRhIuTywPHlwDC6GtMlikH";
   var tz_set_endpoint = '/tz_detect/';
   var csrf_header_name = 'x-csrftoken';
   (function() {

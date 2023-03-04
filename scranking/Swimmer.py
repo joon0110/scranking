@@ -27,7 +27,8 @@ class Swimmer:
     def get_name(self, soup):
         name = soup.find('title')
         titleString = name.string
-        s1 = titleString.replace("| Swimcloud", "", 1)
+        s1 = titleString.replace("| Swimcloud", "", 1).replace('\n', '').strip()
+
         if not s1:
             return None
         else:
@@ -50,7 +51,7 @@ class Swimmer:
                 instagram = link['href']
                 print(instagram)
         
-"""
+        
 url = 'https://www.swimcloud.com/swimmer/549377/'
 swimmer = Swimmer(url)
 http_status = swimmer.get_http_status()
@@ -63,7 +64,7 @@ print(url)
 print("HTTP status:", http_status)
 print(name)
 swimmer.get_info(infohtml)
-
+"""
 
 should output:
 https://www.swimcloud.com/swimmer/549377/
