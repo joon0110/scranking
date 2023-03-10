@@ -18,14 +18,14 @@ install:  ## install library
 # LINTS #
 #########
 lint:  ## run static analysis with flake8
-	python -m black --check $(SRC) $(SETUP)
-	python -m pflake8 $(SRC) $(SETUP)
+	python3 -m black --check $(SRC) $(SETUP)
+	python3 -m flake8 $(SRC) $(SETUP)
 
 # Alias
 lints: lint
 
 format:  ## run autoformatting with black
-	python -m black $(SRC)/ $(SETUP)
+	python3 -m black $(SRC)/ $(SETUP)
 
 # alias
 fix: format
