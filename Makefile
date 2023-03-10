@@ -19,7 +19,7 @@ install:  ## install library
 #########
 lint:  ## run static analysis with flake8
 	python -m black --check $(SRC) $(SETUP)
-	python -m pflake8 $(SRC) $(SETUP)
+	python -m flake8 $(SRC) $(SETUP)
 
 # Alias
 lints: lint
