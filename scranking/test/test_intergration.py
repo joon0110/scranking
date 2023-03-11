@@ -1,5 +1,4 @@
 from scranking.Swimmer import Swimmer
-from bs4 import BeautifulSoup
 
 
 def test_swimmer():

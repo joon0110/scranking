@@ -8,7 +8,6 @@ scranking is a python library that display ranking of the college swimmer
 [![Build Status](https://github.com/joon0110/scranking/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/joon0110/scranking/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/joon0110/scranking/branch/main/graph/badge.svg)](https://codecov.io/gh/joon0110/scranking)
 
-
 ## Overview
 
 ranking.py is a pyhton library that calculates and illustrate the ranks of college swimmer.
@@ -20,3 +19,4 @@ Only highschool swimmers have the rank illustrated on their profile. Unlike the 
 
 
 Maybe I am changing to Columbia Graduate Calculator where it is a python library helps the student to be on track to graudate
+
