@@ -19,3 +19,4 @@ Only highschool swimmers have the rank illustrated on their profile. Unlike the 
 
 
 Maybe I am changing to Columbia Graduate Calculator where it is a python library helps the student to be on track to graudate
+
