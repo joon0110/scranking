@@ -10,13 +10,10 @@ scranking is a python library that display ranking of the college swimmer
 
 ## Overview
 
-ranking.py is a pyhton library that calculates and illustrate the ranks of college swimmer.
+Scranking is a library that scrapes data from a website such as [swimcloud](https://www.swimcloud.com/swimmer/549377/), which is website that shows times and ranking of the college swimmer. 
 
-Only highschool swimmers have the rank illustrated on their profile. Unlike the highschool swimmers, college swimmers don't.
+The library will allow users to simpily type the URL and get all the neccessary information of that swimmer.
 
-- [highschool swimmer](https://www.swimcloud.com/swimmer/1156452/)
-- [college swimmer](https://www.swimcloud.com/swimmer/549377/)
+## Install
 
-
-Maybe I am changing to Columbia Graduate Calculator where it is a python library helps the student to be on track to graudate
-
+Install using 'pip install scranking' in the command line.
