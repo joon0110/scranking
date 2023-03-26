@@ -57,7 +57,7 @@ url = 'https://www.swimcloud.com/swimmer/549377/'
 swimmer = Swimmer(url)
 http_status = swimmer.get_http_status()
 soup = swimmer.get_soup()
-swimmer.save_soup_to_file(soup, "schml.txt")
+#swimmer.save_soup_to_file(soup, "schml.txt")
 infohtml = '<ul class="o-list-inline o-list-inline--dotted"><li>Katy, TX</li><li><a href="/team/283">Columbia University</a></li><li><ul class="o-list-inline"><li class="u-mr-"><a class="btn-icon-plain" href="https://twitter.com/SeungjoonA" target="_blank" title="Twitter"><i class="fab fa-twitter"></i><span class="u-is-hidden-visually">Seungjoon Ahn on Twitter</span></a></li><li><a class="btn-icon-plain" href="https://instagram.com/seun_g01" target="_blank" title="Instagram"><i class="fab fa-instagram"></i><span class="u-is-hidden-visually">Seungjoon Ahn on Instagram</span></a></li></ul></li></ul>'  # noqa
 
 name = swimmer.get_name(soup)
