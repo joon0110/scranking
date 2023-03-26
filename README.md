@@ -3,10 +3,10 @@
 scranking is a python library that display ranking of the college swimmer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
 ![GitHub issues](https://img.shields.io/github/issues/joon0110/scranking)
 [![Build Status](https://github.com/joon0110/scranking/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/joon0110/scranking/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/joon0110/scranking/branch/main/graph/badge.svg)](https://codecov.io/gh/joon0110/scranking)
+[![PyPI](https://img.shields.io/pypi/v/scranking)](https://pypi.org/project/scranking/)
 
 ## Overview
 
