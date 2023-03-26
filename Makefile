@@ -6,13 +6,13 @@ TESTS = scranking/test/*
 # BUILD #
 #########
 develop:  ## install dependencies and build library
-	python -m pip install -e .[develop]
+	python3 -m pip install -e .[develop]
 
 build:  ## build the python library
-	python $(SETUP) build build_ext --inplace
+	python3 $(SETUP) build build_ext --inplace
 
 install:  ## install library
-	python -m pip install .
+	python3 -m pip install .
 
 #########
 # LINTS #
@@ -37,7 +37,7 @@ check:  ## check assets for packaging
 checks: check
 
 annotate:  ## run type checking
-	python -m mypy ./$(SRC)
+	python3 -m mypy ./$(SRC)
 
 #########
 # TESTS #
