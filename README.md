@@ -17,3 +17,24 @@ The library will allow users to simpily type the URL and get all the neccessary 
 ## Install
 
 Install using 'pip install scranking' in the command line.
+
+## Quickstart of scranking
+
+```python
+from scranking import Swimmer
+
+    # Initialize the swimmer object with your swimcloud url
+    swimmer = Swimmer("url")
+
+    # Check if the browser is working
+    swimmer.get_http_status()
+
+    # Create a bf4 for that swimmer objecft
+    swimmer.get_soup()
+
+    # Get the full name of that swimmer with the soup you created
+    swimmer.get_name("soup")
+
+    # Find a line html that contains swimmer's social network information
+    swimmer.get_info("infohtml")
+```
