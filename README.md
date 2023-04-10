@@ -7,6 +7,7 @@ scranking is a python library that display ranking of the college swimmer
 [![Build Status](https://github.com/joon0110/scranking/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/joon0110/scranking/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/joon0110/scranking/branch/main/graph/badge.svg)](https://codecov.io/gh/joon0110/scranking)
 [![PyPI](https://img.shields.io/pypi/v/scranking)](https://pypi.org/project/scranking/)
+[![Docs](https://readthedocs.org/projects/scranking/badge/?version=latest)](https://scranking.readthedocs.io/en/latest/)
 
 ## Overview
 
