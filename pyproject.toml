@@ -49,6 +49,9 @@ develop = [
     "twine",
     "wheel",
     "beautifulsoup4",
+    "sphinx",
+    "sphinx_rtd_theme",
+    "recommonmark",
 ]
 
 [tool.black]
