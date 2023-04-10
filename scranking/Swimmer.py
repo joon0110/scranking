@@ -3,10 +3,22 @@ from bs4 import BeautifulSoup
 
 
 class Swimmer:
+    """
+    A class representing a swimmer for Swimcloud website
+    """
+
     def __init__(self, url):
+        """
+        Initialize the Swimmer object.
+        """
         self.url = url
 
     def get_http_status(self):
+        """
+        Check if the Swimcloud website is working.
+
+        :return: The status code of the website.
+        """
         response = requests.get(self.url)
         if not response:
             return "Connection fail"
@@ -14,6 +26,11 @@ class Swimmer:
             return response.status_code
 
     def get_soup(self):
+        """
+        Create a bf4 for the input url.
+
+        :return: BeautifulSoup of the input url.
+        """
         response = requests.get(self.url)
         soup = BeautifulSoup(response.content, 'html.parser')
         if not soup:
@@ -22,10 +39,20 @@ class Swimmer:
             return soup
 
     def save_soup_to_file(self, soup, filename):
+        """
+        Create a txt file that contains the html of the input website to see with eyes.
+
+        """
         with open(filename, "w") as f:
             f.write(str(soup))
 
     def get_name(self, soup):
+        """
+        Gets the name of the swimmer.
+
+        :param soup: The BeautifulSoup you created from get_soup() method.
+        :return: A full name of the swimmer.
+        """
         name = soup.find('title')
         titleString = name.string
         s1 = titleString.replace("| Swimcloud", "", 1).replace('\n', '').strip()  # noqa
@@ -36,6 +63,9 @@ class Swimmer:
             return s1
 
     def get_info(self, html):
+        """
+        Get the social network informnations of the swimmer
+        """
         newsoup = BeautifulSoup(html, 'html.parser')
         hometown = newsoup.find('li').get_text()
         print(hometown)
@@ -53,6 +83,8 @@ class Swimmer:
                 print(instagram)
 
 
+"""
+#still working lines below.
 url = 'https://www.swimcloud.com/swimmer/549377/'
 swimmer = Swimmer(url)
 http_status = swimmer.get_http_status()
@@ -65,3 +97,4 @@ print(url)
 print("HTTP status:", http_status)
 print(name)
 swimmer.get_info(infohtml)
+"""
