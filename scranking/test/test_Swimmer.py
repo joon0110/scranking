@@ -78,8 +78,6 @@ class TestSwimmer(unittest.TestCase):
         expected_output = (
             "Hometown: Hometown, University: University, " "Twitter: twitter.com, Instagram: instagram.com"
         )
-        soup = BeautifulSoup(html_doc, 'html.parser')
-
         self.assertEqual(swimmer.get_info(html_doc), expected_output)
 
     def test_get_event(self):
