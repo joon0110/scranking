@@ -11,13 +11,13 @@ scranking is a python library that display ranking of the college swimmer
 
 ## Overview
 
-Scranking is a library that scrapes data from a website such as [swimcloud](https://www.swimcloud.com/swimmer/549377/), which is website that shows times and ranking of the college swimmer. 
+Scranking is a library designed specifically for extracting data from [swimcloud](https://www.swimcloud.com/swimmer/549377/), a comprehensive website that showcases the times and rankings of high school and college swimmers.
 
 The library will allow users to simpily type the URL and get all the neccessary information of that swimmer.
 
 ## Install
 
-Install using 'pip install scranking' in the command line.
+Install using 'pip install scranking' in the command line and import it to your python file like all the others.
 
 ## Quickstart of scranking
 
