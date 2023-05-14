@@ -11,7 +11,7 @@ name = "scranking"
 authors = [{name = "Joon Ahn", email = "sa3883@columbia.edu"}]
 description="scranking is a python library that display ranking of the college swimmer"
 readme = "README.md"
-version = '0.1.1'
+version = '0.1.2'
 requires-python = ">=3.8"
 
 dependencies = []
