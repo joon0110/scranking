@@ -33,9 +33,18 @@ from scranking import Swimmer
     # Create a bf4 for that swimmer objecft
     swimmer.get_soup()
 
+    # Save the html of the website into text file
+    swimmer.save_soup_to_file("soup", "filename.txt")
+
     # Get the full name of that swimmer with the soup you created
     swimmer.get_name("soup")
 
-    # Find a line html that contains swimmer's social network information
+    # Find a line html that contains swimmer's social network information and hometown
     swimmer.get_info("infohtml")
+
+    # Get all the events for that swimmer with the best time
+    swimmer.get_event("soup")
+
+    # A search method for get_event method
+    swimmer.lookup_event("40 L Free")
 ```

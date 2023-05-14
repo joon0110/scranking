@@ -46,7 +46,7 @@ test: ## clean and run unit tests
 	python3 -m pytest -v $(TESTS)
 
 coverage:  ## clean and run unit tests with coverage
-	python3 -m pytest -v $(TESTS) --cov=$(SRC) --cov-branch --cov-fail-under=60 --cov-report term-missing
+	python3 -m pytest -v $(TESTS) --cov=$(SRC) --cov-branch --cov-fail-under=80 --cov-report term-missing
 
 # Alias
 tests: test
