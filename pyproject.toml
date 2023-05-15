@@ -52,6 +52,7 @@ develop = [
     "sphinx",
     "sphinx_rtd_theme",
     "recommonmark",
+    "requests",
 ]
 
 [tool.black]
